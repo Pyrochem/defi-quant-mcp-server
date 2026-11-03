@@ -1,0 +1,36 @@
+{
+  "name": "defi-quant-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) Server for DeFi Quant Yield, Arbitrage, Liquidation & Kink Simulation across Morpho Blue, Ethena, Fluid, Sky, Euler V2, and Pendle V2.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "defi-quant-mcp-server": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "defi",
+    "quant",
+    "claude",
+    "cursor",
+    "morpho-blue",
+    "ethena",
+    "fluid",
+    "sky-protocol",
+    "euler-v2",
+    "pendle-v2"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  }
+}
