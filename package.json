@@ -1,36 +1,46 @@
 {
   "name": "defi-quant-mcp-server",
-  "version": "1.0.0",
-  "description": "Model Context Protocol (MCP) Server for DeFi Quant Yield, Arbitrage, Liquidation & Kink Simulation across Morpho Blue, Ethena, Fluid, Sky, Euler V2, and Pendle V2.",
+  "version": "1.0.2",
+  "description": "Model Context Protocol (MCP) server for DeFi yield farming, stablecoin leverage looping, borrow rate comparisons, and pre-trade slippage simulations across Morpho Blue, Ethena sUSDe, Fluid, Sky sUSDS, Euler V2, and Pendle V2.",
   "license": "MIT",
+  "author": "Pyrochem",
   "type": "module",
+  "main": "index.js",
   "bin": {
     "defi-quant-mcp-server": "./index.js"
   },
-  "files": [
-    "index.js",
-    "README.md"
-  ],
-  "scripts": {
-    "start": "node index.js"
+  "Repository": {
+    "type": "git",
+    "url": "https://github.com/Pyrochem/defi-quant-mcp-server.git"
   },
   "keywords": [
     "mcp",
-    "model-context-protocol",
     "mcp-server",
+    "model-context-protocol",
     "defi",
-    "quant",
-    "claude",
-    "cursor",
+    "defi-yield",
+    "yield-farming",
+    "stablecoin-yield",
+    "leverage-looping",
+    "carry-trade",
+    "crypto-arbitrage",
     "morpho-blue",
     "ethena",
-    "fluid",
-    "sky-protocol",
+    "susde",
+    "fluid-protocol",
     "euler-v2",
-    "pendle-v2"
+    "pendle",
+    "sky-protocol",
+    "susds",
+    "quant",
+    "borrow-rates",
+    "liquidation-risk",
+    "slippage-simulator",
+    "claude-desktop",
+    "cursor"
   ],
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.1",
     "zod": "^3.23.8"
   }
 }
