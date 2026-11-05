@@ -3,7 +3,7 @@
   "name": "io.github.Pyrochem/defi-quant-mcp-server",
   "title": "DeFi Quant Yield & Risk Engine",
   "description": "Quantitative DeFi carry ROE, borrow kink slippage & risk simulation across 6 protocols.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "websiteUrl": "https://mcp.so/servers/defi-quant-multi-protocol-yield-risk-api",
   "repository": {
     "url": "https://github.com/Pyrochem/defi-quant-mcp-server",
