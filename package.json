@@ -1,7 +1,8 @@
 {
   "name": "defi-quant-mcp-server",
-  "version": "1.0.2",
-  "description": "Model Context Protocol (MCP) server for DeFi yield farming, stablecoin leverage looping, borrow rate comparisons, and pre-trade slippage simulations across Morpho Blue, Ethena sUSDe, Fluid, Sky sUSDS, Euler V2, and Pendle V2.",
+  "version": "1.0.3",
+  "mcpName": "io.github.Pyrochem/defi-quant-mcp-server",
+  "description": "Quantitative DeFi yield, leveraged carry ROE, and borrow rate kink slippage MCP server for Morpho Blue, Ethena, Fluid, Sky, Euler V2, and Pendle V2.",
   "license": "MIT",
   "author": "Pyrochem",
   "type": "module",
