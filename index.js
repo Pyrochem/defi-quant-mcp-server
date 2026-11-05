@@ -10,7 +10,7 @@ const RAPIDAPI_HOST =
 
 const server = new McpServer({
   name: "defi-quant-mcp-server",
-  version: "1.0.4",
+  version: "1.0.5",
 });
 
 function buildZeroKeyLocalPreview(path, queryParams = {}) {
