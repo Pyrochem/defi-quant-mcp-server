@@ -10,7 +10,7 @@ const RAPIDAPI_HOST =
 
 const server = new McpServer({
   name: "defi-quant-mcp-server",
-  version: "1.0.2",
+  version: "1.0.3",
 });
 
 async function callQuantEndpoint(path, queryParams = {}) {
