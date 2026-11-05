@@ -1,6 +1,6 @@
 {
   "name": "defi-quant-mcp-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "mcpName": "io.github.Pyrochem/defi-quant-mcp-server",
   "description": "Quantitative DeFi yield, leveraged carry ROE, and borrow rate kink slippage MCP server for Morpho Blue, Ethena, Fluid, Sky, Euler V2, and Pendle V2.",
   "license": "MIT",
@@ -10,6 +10,11 @@
   "bin": {
     "defi-quant-mcp-server": "./index.js"
   },
+   "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "Repository": {
     "type": "git",
     "url": "https://github.com/Pyrochem/defi-quant-mcp-server.git"
