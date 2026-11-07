@@ -6,6 +6,7 @@ Unlike read-only DeFi wrappers that only return static historical snapshots, thi
 
 [![M8ven Verified](https://m8ven.ai/badge/mcp/pyrochem-defi-quant-mcp-server-o9s0eo?variant=verified&v=c84da825838e618f4e4f10cbf0c237cb)](https://m8ven.ai/mcp/pyrochem-defi-quant-mcp-server-o9s0eo?s=readme)
 
+[![DeFi Quant Yield & Risk Engine MCP on mcprush](https://mcprush.com/badge/defi-quant-yield-risk-engine-mcp/score.svg)](https://mcprush.com/to/defi-quant-yield-risk-engine-mcp?ref=badge)
 ---
 
 ## Example AI Prompts This Server Solves
