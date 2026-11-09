@@ -10,7 +10,7 @@ const RAPIDAPI_HOST =
 
 export const server = new McpServer({
   name: "defi-quant-mcp-server",
-  version: "1.0.7",
+  version: "1.0.8",
 });
 
 // Explicit boolean annotations required by MCP quality scanners & OpenAI directory
@@ -85,9 +85,9 @@ export function buildZeroKeyLocalPreview(path, queryParams = {}) {
     },
     upgrade_to_live_rpc_telemetry: {
       free_tier_url:
-        "https://rapidapi.com/pyrochem/api/defi-quant-multi-protocol-yield-risk-api",
+        "https://rapidapi.com/infio-infio-quant/api/defi-quant-multi-protocol-yield-risk-api",
       instructions:
-        "Grab a free API key (50 requests/month free tier) at RapidAPI and set RAPIDAPI_KEY in your MCP client config to unlock real-time RPC storage slot unpacking and live multi-protocol yield scanning.",
+        "Grab a free API key (100 requests/month free tier) at RapidAPI and set RAPIDAPI_KEY in your MCP client config to unlock real-time RPC storage slot unpacking and live multi-protocol yield scanning.",
       host: RAPIDAPI_HOST,
     },
   };
@@ -179,7 +179,7 @@ server.registerTool(
     },
   },
   async ({ leverage }) =>
-    callQuantEndpoint("/api/v1/arbitrage/stablecoin-carry-radar", { leverage })
+    callQuantEndpoint("/api/v1/radar/stablecoin-yield-matrix", { leverage })
 );
 
 // 2. Morpho Blue AdaptiveCurveIRM Kink & Slippage Simulator
@@ -210,7 +210,7 @@ server.registerTool(
     },
   },
   async ({ marketId, simBorrowDelta }) =>
-    callQuantEndpoint("/api/v1/morpho/market-risk", {
+    callQuantEndpoint("/api/v1/morpho/market-and-risk", {
       marketId,
       simBorrowDelta,
     })
@@ -238,7 +238,7 @@ server.registerTool(
     },
   },
   async ({ simDepositUSDe }) =>
-    callQuantEndpoint("/api/v1/ethena/yield-analytics", { simDepositUSDe })
+    callQuantEndpoint("/api/v1/ethena/vesting-and-dilution", { simDepositUSDe })
 );
 
 // 4. Fluid Protocol LiquidityLayer Bit-Unpacker & Utilization Simulator
@@ -269,7 +269,7 @@ server.registerTool(
     },
   },
   async ({ tokenAddress, simBorrowDelta }) =>
-    callQuantEndpoint("/api/v1/fluid/resolver", {
+    callQuantEndpoint("/api/v1/fluid/liquidity-state", {
       tokenAddress,
       simBorrowDelta,
     })
@@ -303,7 +303,7 @@ server.registerTool(
     },
   },
   async ({ leverage, borrowRateOverride }) =>
-    callQuantEndpoint("/api/v1/sky/susds-analytics", {
+    callQuantEndpoint("/api/v1/sky/susds-carry-simulator", {
       leverage,
       borrowRateOverride,
     })
@@ -343,7 +343,7 @@ server.registerTool(
     },
   },
   async ({ vaultAddress, accountAddress, simBorrowDelta }) =>
-    callQuantEndpoint("/api/v1/euler/vault-audit", {
+    callQuantEndpoint("/api/v1/euler-v2/vault-and-evc-simulator", {
       vaultAddress,
       accountAddress,
       simBorrowDelta,
@@ -378,7 +378,7 @@ server.registerTool(
     },
   },
   async ({ marketAddress, simPtTradeSize }) =>
-    callQuantEndpoint("/api/v1/pendle/market-analytics", {
+    callQuantEndpoint("/api/v1/pendle-v2/logit-curve-and-twap", {
       marketAddress,
       simPtTradeSize,
     })
